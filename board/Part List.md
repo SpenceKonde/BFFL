@@ -26,5 +26,7 @@
 
 
 * R8 is missing from rev A
+
 ** Tab on header must be shaved down in order to fit the PWM fan connector, which expects the keying tab to be the size that it is on a standard 3 pin KK-100 connector. 
+
 +R3, R4, and R5 are wired to incorrect pins of the ATTiny in rev A. 
