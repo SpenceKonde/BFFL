@@ -15,18 +15,15 @@
 | R7 | 1k Ohm | Vbat divider |
 | R8* | 1K Ohm | Pulldown for temp sensor |
 | R9 | 10k Ohm | Pulldown for MOSFET |
-|JP1| 3 pin KK-100 header | Temp |
-|JP2| 4 pin KK-100 header** | Fan |
+|JP1| 2 pin KK-100 header | 12v in |
+|JP2| 7 pin KK-100 header | controls |
 |JP3| JP4: Screw terminals | LED |
-|JP5| 7 pin 0.1" dupont | controls |
-|JP6| 2 pin KK-100 header | 12v in |
-|JP7| 2x3 pin 0.1" header | AVR ISP |
+|JP4| 3 pin KK-100 header | Temp |
+|JP5| 4 pin KK-100 header** | Fan |
+|JP6| 2x3 pin 0.1" header | AVR ISP |
 | Q1 | AO4438 ||
 | U1  | ATINY84A-SU-ND ||
+| U2  | TLV1117-50CDCYR | 5v LDO regulator
 
-
-* R8 is missing from rev A
 
 ** Tab on header must be shaved down in order to fit the PWM fan connector, which expects the keying tab to be the size that it is on a standard 3 pin KK-100 connector. 
-
-+R3, R4, and R5 are wired to incorrect pins of the ATTiny in rev A. 
